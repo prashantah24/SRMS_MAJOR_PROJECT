@@ -252,7 +252,7 @@ public class adminHome extends javax.swing.JFrame {
         
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srm","root","Marshalermac@65");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/srm","root","password");
             Statement st = con.createStatement();
             if(rollno.isEmpty()){
                 JOptionPane.showMessageDialog(null,"Roll No. cannot be empty");
